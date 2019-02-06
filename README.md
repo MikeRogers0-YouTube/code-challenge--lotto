@@ -8,11 +8,11 @@ I've setup a `lotto.js` file to get us started. You should be able to copy and p
 
 ## Tasks
 
-### Task 1: Pick your winning numbers
+### Task 1: Pick your winning numbers
 
 In the lotto class, select 3 numbers which are your winning numbers.
 
-### Task 2: Let users input their chosen numbers
+### Task 2: Let users input their chosen numbers
 
 We want users to pick their numbers like:
 
