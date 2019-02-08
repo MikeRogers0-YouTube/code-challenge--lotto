@@ -6,6 +6,8 @@ In our lottery, we're going to use the numbers 1 through 19, and the user only n
 
 I've setup a `lotto.js` file to get us started. You should be able to copy and paste the file into your browsers console to see it working.
 
+You can view the solution on YouTube: https://www.youtube.com/watch?v=TJbB631xOKM&list=PLsqSLeo9DZwRuz8Ii-HsnoSisburj75ZM
+
 ## Tasks
 
 ### Task 1: Pick your winning numbers
