@@ -29,9 +29,7 @@ function Lotto() {
 
     console.log('Chosen Numbers', chosenNumbers)
 
-    // TODO: We want to select 3 winning balls for our lottery. 
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
-    // [].slice could be the way to do it.
+    // Selecting the winning numbers.
     winningNumbers = balls.slice(0, 3)
     console.log('Winning Numbers', winningNumbers)
 
