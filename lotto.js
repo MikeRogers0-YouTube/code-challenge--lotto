@@ -20,8 +20,7 @@ function Lotto() {
   };
 
   function setChosenNumbers(newChosenNumbers){
-    console.log('newChosenNumbers: ', newChosenNumbers);
-    // TODO: We need to set the chosenNumbers variable, with the value of newChosenNumbers
+    chosenNumbers = newChosenNumbers;
   };
 
   function play() {
