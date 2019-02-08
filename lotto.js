@@ -29,10 +29,13 @@ function Lotto() {
     console.log('Chosen Numbers', chosenNumbers)
 
     // Selecting the winning numbers.
-    winningNumbers = balls.slice(0, 3)
+    winningNumbers = balls.slice(0, 3);
     console.log('Winning Numbers', winningNumbers)
 
     // TODO: Finally, if the user is a winner, tell them.
+    if ( chosenNumbers.sort().join('-') == winningNumbers.sort().join('-') ){
+      console.log('User is a winner');
+    }
   };
 
   // These are our public methods, which we'll allow users to interact with.
@@ -43,5 +46,5 @@ function Lotto() {
 }
 
 var lotto = Lotto();
-lotto.setChosenNumbers([3,5,6]);
+lotto.setChosenNumbers([1,2,3]);
 lotto.play();
