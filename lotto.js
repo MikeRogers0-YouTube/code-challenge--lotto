@@ -12,7 +12,8 @@ Array.prototype.shuffle = function () {
 function Lotto() {
   // This'll give us an array of numbers from 0 to 19.
   var balls = Array.from({length: 19}, function (v, k) { return k+1 });
-  var chosenNumbers = []
+  var chosenNumbers = [];
+  var winningNumbers = [];
 
   function shuffleBalls(){
     balls.shuffle();
@@ -24,16 +25,15 @@ function Lotto() {
   };
 
   function play() {
-    console.log( 'Balls: ', balls)
     shuffleBalls();
-    console.log( 'Shuffled Balls: ', balls)
 
     console.log('Chosen Numbers', chosenNumbers)
 
     // TODO: We want to select 3 winning balls for our lottery. 
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
     // [].slice could be the way to do it.
-    console.log('Winning Numbers', 'TODO')
+    winningNumbers = balls.slice(0, 3)
+    console.log('Winning Numbers', winningNumbers)
 
     // TODO: Finally, if the user is a winner, tell them.
   };
