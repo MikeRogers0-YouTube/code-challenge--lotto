@@ -23,6 +23,12 @@ function Lotto() {
     chosenNumbers = newChosenNumbers;
   };
 
+  function isUserAWinner(){
+    if ( chosenNumbers.sort().join('-') == winningNumbers.sort().join('-') ){
+      console.log('User is a winner');
+    }
+  };
+
   function play() {
     shuffleBalls();
 
@@ -32,10 +38,7 @@ function Lotto() {
     winningNumbers = balls.slice(0, 3);
     console.log('Winning Numbers', winningNumbers)
 
-    // TODO: Finally, if the user is a winner, tell them.
-    if ( chosenNumbers.sort().join('-') == winningNumbers.sort().join('-') ){
-      console.log('User is a winner');
-    }
+    isUserAWinner();
   };
 
   // These are our public methods, which we'll allow users to interact with.
